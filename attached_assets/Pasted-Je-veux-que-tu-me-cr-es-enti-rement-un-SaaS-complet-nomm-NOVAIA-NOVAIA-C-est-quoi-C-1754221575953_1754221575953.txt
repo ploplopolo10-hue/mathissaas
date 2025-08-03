@@ -1,0 +1,69 @@
+Je veux que tu me crées entièrement un SaaS complet nommé **NOVAIA**.
+
+🧠 NOVAIA : C’est quoi ?
+C’est une plateforme de coaching en ligne assistée par IA qui aide les gens à améliorer leur forme physique, leur alimentation, leur mental et leur productivité. Elle s’adresse à ceux qui veulent se reprendre en main et se sentir bien dans leur corps et leur tête.
+
+💡 Style & Vibe du site :
+- Design **motivant**, dynamique, moderne
+- Couleurs : bleu électrique, noir profond, blanc pur (ambiance high-tech + sport + bien-être)
+- Style visuel : **glassmorphism** / néo-futuriste
+- Look inspiré d’apps comme **Strava**, **MyFitnessPal**, **Notion**, et **Calm**
+- Une identité forte, mémorable, avec des visuels puissants et une UX simple
+
+📦 Contenu du site :
+Le site comprend :
+- Page d’accueil avec call-to-action "Démarrer gratuitement" et "Voir la démo"
+- Menu header avec Accueil / Fonctionnalités / Tarifs / Connexion
+- Tous les boutons doivent être **cliquables** et actifs
+- Menu burger (3 traits) responsive sur mobile
+- Pied de page avec : FAQ, Témoignages, Mentions légales, Politique de confidentialité, Contact, Réseaux sociaux (Twitter, Instagram, LinkedIn, YouTube)
+
+🎯 Fonctionnalités de l’application :
+- Authentification (signup, login, logout)
+- Dashboard utilisateur complet après connexion
+- Base de données utilisateurs (avec PostgreSQL ou autre via ORM)
+- Paiement Stripe avec 3 offres :
+   - Gratuit : Accès limité
+   - Premium 19€/mois : accès complet
+   - Pro+ 39€/mois : suivi personnalisé IA + fonctions avancées
+
+🧠 4 modules de coaching IA intégrés (tous utilisables) :
+1. **Entraînement** → Création de programme sur mesure, suivi des séances
+2. **Nutrition** → Scanner les plats, analyser calories, macros, proposer recettes
+3. **Mental** → Coaching bien-être, respirations guidées, méditation
+4. **Productivité** → Création de routines, gestion de to-do, focus
+
+🧩 Technologies à utiliser :
+- Frontend : React + TailwindCSS (ou Shadcn/UI)
+- Backend : Node/Express + TypeScript
+- Base de données : PostgreSQL avec Drizzle ORM (ou Prisma)
+- Auth : système d’authentification sécurisé (email/password ou Replit Auth si sur Replit)
+- Paiement : Stripe
+- Déploiement : doit pouvoir être hébergé sur GitHub, Replit, Vercel ou Railway
+
+📂 Structure des fichiers à générer :
+À la fin, je veux que tu me donnes **tout le code source organisé et prêt à être exporté**, sous ce format :
+
+--- Fichier : index.html ---
+[code ici]
+
+--- Fichier : style.css ---
+[code ici]
+
+--- Fichier : app.js ---
+[code ici]
+
+--- Fichier : /client/pages/signup.html ---
+[code ici]
+
+--- Fichier : /server/db/users.json (ou PostgreSQL init) ---
+[code ici]
+
+--- Fichier : .env.example ---
+[exemples des variables d’environnement : STRIPE_KEY, DB_URL...]
+
+--- Fichier : README.md ---
+[instructions d’installation, déploiement, démarrage local]
+
+⚠️ Ne me donne **aucun lien** ni .zip : je veux **tout le code ici dans le chat**, brut, bien organisé, **prêt à être copié dans une autre IA ou sur GitHub**.
+
