@@ -47,7 +47,7 @@ export default function Landing() {
   return (
     <div className="min-h-screen overflow-x-hidden">
       {/* Navigation Header */}
-      <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-white/5 border-b border-white/10">
+      <nav className="fixed top-0 w-full z-50 backdrop-blur-xl bg-cyan-500/5 border-b border-cyan-400/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
@@ -132,8 +132,21 @@ export default function Landing() {
       <section id="accueil" className="pt-16 min-h-screen flex items-center relative overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/20 rounded-full blur-3xl animate-pulse-slow"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-float"></div>
+          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-cyan-400/20 rounded-full blur-3xl animate-pulse-slow"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/15 rounded-full blur-3xl animate-float"></div>
+          <div className="absolute top-3/4 left-1/2 w-48 h-48 bg-cyan-300/10 rounded-full blur-2xl animate-float" style={{animationDelay: '1s'}}></div>
+          
+          {/* Tech grid pattern */}
+          <div className="absolute inset-0 opacity-[0.02]" 
+               style={{
+                 backgroundImage: `linear-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px)`,
+                 backgroundSize: '50px 50px'
+               }}>
+          </div>
+          
+          {/* Animated tech lines */}
+          <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-400/30 to-transparent animate-pulse"></div>
+          <div className="absolute bottom-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent animate-pulse" style={{animationDelay: '1.5s'}}></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -141,26 +154,26 @@ export default function Landing() {
             {/* Hero Content */}
             <div className="text-center lg:text-left">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6">
-                Transformez votre
-                <span className="gradient-text block">
-                  vie
+                <span className="glow-text text-cyan-100">Transformez</span> votre
+                <span className="gradient-text block glow-text text-6xl lg:text-8xl">
+                  PERFORMANCE
                 </span>
-                avec l'IA
+                <span className="text-cyan-100">avec l'IA</span>
               </h1>
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                NOVAIA révolutionne votre bien-être avec un coaching personnalisé par IA. 
-                Fitness, nutrition, mental et productivité - tout en un.
+              <p className="text-xl text-cyan-100/80 mb-8 leading-relaxed">
+                <span className="text-cyan-300 font-semibold">NOVAIA</span> révolutionne vos performances avec un coaching ultra-personnalisé par IA. 
+                <span className="text-cyan-400">Entraînement, nutrition, mental et productivité</span> - la plateforme ultime pour les champions.
               </p>
               
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button onClick={handleStartFree} className="primary-button px-8 py-4 text-lg">
+                <Button onClick={handleStartFree} className="primary-button px-8 py-4 text-lg font-bold">
                   <Rocket className="mr-2 h-5 w-5" />
-                  Démarrer gratuitement
+                  DÉMARRER L'ENTRAÎNEMENT
                 </Button>
-                <Button onClick={handleDemo} variant="outline" className="glass-button px-8 py-4 text-lg">
+                <Button onClick={handleDemo} variant="outline" className="sport-button px-8 py-4 text-lg">
                   <Play className="mr-2 h-5 w-5" />
-                  Voir la démo
+                  Voir en action
                 </Button>
               </div>
               
